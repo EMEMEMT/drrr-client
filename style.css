@@ -1,0 +1,159 @@
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(200, 200, 200, 0.2);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(200, 200, 200, 0.5);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif !important;
+    background-color: #1e1e24 !important; /* 深色背景 */
+    color: #e0e0e0 !important;           /* 浅色文字 */
+    overflow-x: hidden !important; 
+    font-size: 13px !important; 
+}
+
+.lounge-top,                
+.sidebar-box.highlight,     
+.hide-sm,                   
+#sidebar-mobile,            
+.lounge-footer,
+.sidebar-box.note.rooms-filter-wrap 
+{
+    display: none !important;
+}
+
+.container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    width: 100% !important;
+}
+
+#profile.lounge-profile {
+    margin-bottom: 6px !important;
+    padding: 6px !important;
+}
+#profile.lounge-profile .avatar {
+    transform: scale(0.85);
+    transform-origin: left center;
+}
+#profile.lounge-profile .name {
+    font-size: 13px !important;
+    margin-top: 4px !important;
+}
+
+.lounge-nav {
+    margin-bottom: 8px !important;
+    padding-bottom: 8px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.1); 
+    display: flex !important;
+    align-items: center !important;
+    height: 30px !important;
+}
+.lounge-nav .pull-left {
+    float: none !important;
+}
+.lounge-nav .btn {
+    padding: 2px 8px !important;
+    font-size: 12px !important;
+    background: transparent !important;
+    border: 1px solid #4a4a52 !important;
+    color: #a0a0a0 !important;
+}
+.lounge-nav .btn:hover {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+.lounge-counter {
+    font-size: 12px !important;
+    color: #888 !important;
+    margin-left: 10px !important;
+}
+
+ul.rooms {
+    padding: 6px 8px !important;
+    margin-bottom: 6px !important;
+    background: rgba(255,255,255,0.03) !important; 
+    border-radius: 6px !important; 
+    border: 1px solid transparent !important;
+}
+ul.rooms:hover {
+    border: 1px solid rgba(255,255,255,0.1) !important; 
+}
+ul.rooms li.name {
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+}
+ul.rooms li.status .progress {
+    height: 4px !important; 
+    margin-top: 6px !important;
+    background-color: #333 !important;
+}
+#rooms-placeholder {
+    margin-top: 10px !important;
+}
+
+#zen-mode-btn {
+    position: fixed !important; 
+    bottom: 5px !important;
+    left: 12px !important;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    background: rgba(30, 30, 36, 0.9); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 50%; 
+    z-index: 99999 !important; 
+    display: none; 
+}
+#zen-mode-btn:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+body.room #zen-mode-btn {
+    display: flex;
+}
+
+
+body.mini-input-mode #room_name,
+body.mini-input-mode ul.menu,                  
+body.mini-input-mode .room-submit-wrap,
+body.mini-input-mode .counter,
+body.mini-input-mode #url-icon,
+body.mini-input-mode #whisper
+{
+    display: none !important;
+}
+
+body.mini-input-mode .message_box_inner {
+    padding: 6px 8px !important;
+}
+
+body.mini-input-mode #room-input-wrap textarea {
+    height: 36px !important;
+    min-height: 36px !important;
+    padding: 8px 10px 8px 8px !important; 
+    margin: 0 !important;
+}
+
+body.mini-input-mode #zen-mode-btn {
+    background: transparent;
+    border-color: transparent;
+    color: #bbb;
+}
+body.mini-input-mode #zen-mode-btn:hover {
+    background: rgba(255,255,255,0.1);
+}
